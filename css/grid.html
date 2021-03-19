@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            #grid {
+                border:5px solid pink;
+                display:grid;
+                grid-template-columns: 150px 1fr; 
+                /*fr=화면 전체를 쓰도록 자동적으로 조정되는 단위
+                    위의 경우에서의 1fr은 150px 제외한 나머지를 다 씀*/
+            }
+            div {
+                border:5px solid gray;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 의미 없는 태그 div, span
+        div = block level element
+        span = inline element -->
+        <div id="grid">
+            <div>NAVIGATION</div>
+            <div>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Repudiandae, quasi expedita. 
+                Error quae perspiciatis, sed fugiat corporis 
+                non ad molestiae dolores dicta ullam eum optio 
+                quos autem vero obcaecati dolorum.</div>
+        </div>
+    </body>
+</html>
